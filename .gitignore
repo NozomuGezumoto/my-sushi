@@ -26,3 +26,10 @@ Thumbs.db
 
 expo-env.d.ts
 # @end expo-cli
+
+# EAS
+google-service-account.json
+*.p8
+*.p12
+*.key
+*.mobileprovision
