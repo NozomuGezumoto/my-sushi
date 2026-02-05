@@ -4,25 +4,38 @@
     "slug": "my-sushi",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/My-Sushi.png",
     "scheme": "mysushi",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/images/splash-icon.png",
+      "image": "./assets/images/My-Sushi.png",
       "resizeMode": "contain",
       "backgroundColor": "#f97316"
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.mysushi.app"
+      "bundleIdentifier": "com.mysushi.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "このアプリは、寿司店の写真を保存・表示するためにフォトライブラリへのアクセスが必要です。",
+        "NSPhotoLibraryAddUsageDescription": "このアプリは、寿司店の写真をフォトライブラリに保存するためにアクセスが必要です。"
+      },
+      "config": {
+        "usesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/icon.png",
+        "foregroundImage": "./assets/images/My-Sushi.png",
         "backgroundColor": "#f97316"
       },
       "package": "com.mysushi.app",
+      "versionCode": 1,
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
       "config": {
         "googleMaps": {
           "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
@@ -32,7 +45,7 @@
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/My-Sushi.png"
     },
     "plugins": [
       "expo-router"
