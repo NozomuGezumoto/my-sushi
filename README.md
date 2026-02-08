@@ -285,6 +285,24 @@ Project_My_Shushi/
 └── tsconfig.json
 ```
 
+## App Store 審査用ドキュメント
+
+App Store に初めて提出する際に必要なドキュメントを `docs/` に用意しています。
+
+| ドキュメント | 用途 |
+|-------------|------|
+| [docs/PRIVACY_POLICY.md](docs/PRIVACY_POLICY.md) | プライバシーポリシー（審査時の「プライバシーURL」用） |
+| [docs/SUPPORT.md](docs/SUPPORT.md) | サポート・お問い合わせ（審査時の「サポートURL」用） |
+| [docs/TERMS.md](docs/TERMS.md) | 利用規約（必要に応じて参照・公開用） |
+| [docs/APP_STORE_REVIEW.md](docs/APP_STORE_REVIEW.md) | 初回審査用チェックリスト・メモ |
+
+**提出前の作業**  
+1. 上記の Markdown を **公開URL** で参照できるようにする（GitHub のこのリポジトリを public にする、または自サイトに掲載する）。  
+2. [docs/SUPPORT.md](docs/SUPPORT.md) 内の「ここにサポート用メールアドレスを記載」を、実際のサポート用メールアドレスに変更する。  
+3. App Store Connect の「プライバシーポリシーURL」「サポートURL」に、それぞれの公開URLを入力する。
+
+---
+
 ## ライセンス
 
 - このツール自体: MIT License
